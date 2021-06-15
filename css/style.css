@@ -160,7 +160,7 @@ h2{
 }  
 /*Header*/
 header {
-    background-image: url(DESKTOP/HERO\ BG.svg);
+    background-image: url('/desktop/herobg.svg');
     background-repeat: no-repeat;
     background-position-y: -2rem;
     min-height: 72rem;
