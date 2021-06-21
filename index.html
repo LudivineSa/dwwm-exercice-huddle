@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> -->
+
     <link rel="stylesheet" href="css/helpers.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -71,7 +72,7 @@
         <div class="container">
         <aside class="aside-cta">
                 <p class="cta-text">Ready to build your community&nbsp;?</p>
-                <a href="#" class="btn-get-started">Get Started For Free</a>
+                <a href="#" class="btn-get-started" id="btn">Get Started For Free</a>
         </aside>
         </div>
 
@@ -90,25 +91,25 @@
 
                 <nav class="list-footer" role="list">
                     <ul>
-                        <li class="li-footer">About Us</li>
-                        <li class="li-footer">What We Do</li>
-                        <li class="li-footer">FAQ</li>
-                        <li class="li-footer">Career</li>
-                        <li class="li-footer">Blog</li>
-                        <li class="li-footer">Contact Us</li>
+                        <li class="li-footer"><a href="" class="footer-a">About Us</a></li>
+                        <li class="li-footer"><a href="" class="footer-a">What We Do</a></li>
+                        <li class="li-footer"><a href="" class="footer-a">FAQ</a></li>
+                        <li class="li-footer"><a href="" class="footer-a">Career</a></li>
+                        <li class="li-footer"><a href="" class="footer-a">Blog</a></li>
+                        <li class="li-footer"><a href="" class="footer-a">Contact Us</a></li>
                     </ul>
                 </nav>
                 
                 <section class="social-media">
                     <ul>
-                        <li class="picto-sm">
-                            <img src="DESKTOP/facebook-logo.svg" alt="picto social media facebook" class="social-media">
+                        <li class="picto-sm"><a href="#">
+                            <img src="DESKTOP/facebook-logo.svg" alt="picto social media facebook" class="social-media"></a>
                         </li>
-                        <li class="picto-sm">
-                            <img src="DESKTOP/twitter.svg" alt="picto social media twitter" class="social-media">
+                        <li class="picto-sm"><a href=#>
+                            <img src="DESKTOP/twitter.svg" alt="picto social media twitter" class="social-media"></a>
                         </li>
-                        <li class="picto-sm">
-                            <img src="DESKTOP/instagram.svg" alt="picto social media instagram" class="social-media">
+                        <li class="picto-sm"><a href=#>
+                            <img src="DESKTOP/instagram.svg" alt="picto social media instagram" class="social-media"></a>
                         </li>
                     </ul>
                 </section>
@@ -117,6 +118,21 @@
 
             <p class="copyright">Copyright 2021 Huddle. All rights reserved.</p>
         </footer>
-        <script src="script.js"></script>
+        
+          <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+          <script>
+            let btn = document.getElementById('btn');
+            btn.addEventListener('click', function(){
+                Swal.fire({
+                title: 'WOOHOO',
+                text: 'Je suis une fenêtre modal qui fonctionne',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+                })
+            })
+        </script>
+
+
+
 </body>
 </html>
