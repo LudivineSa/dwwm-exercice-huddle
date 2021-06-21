@@ -130,7 +130,9 @@ h2{
     border-radius: 25px;
     font-size: 1.4rem;
     transform: 0.3s;
-    border : 3px solid transparent
+    border : 3px solid transparent;
+    display : inline-block
+
 }
 
 .btn-get-started:hover {
@@ -149,7 +151,7 @@ h2{
 }  
 @media screen and (max-width:500px){
     .btn-try-it{
-        font-size : 10px;
+        font-size : 1rem;
         padding : 0.5rem 2.3rem;
     }
     .btn-get-started{
@@ -171,6 +173,7 @@ header {
 header nav{
     padding-top: 5rem;
 }
+
 header nav .container{
     display:flex;
     justify-content: space-between;
@@ -432,6 +435,11 @@ header nav .container{
     font-size : 1.2rem;
     padding-right : 5rem;
     padding-bottom: 6rem;
+}
+
+.footer-a{
+    text-decoration : none;
+    color : white;
 }
 
 
